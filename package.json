@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html",
+    "build": "parcel build index.js",
     "prettier": "prettier --single-quote --arrow-parens always --write",
     "lint": "eslint --fix"
   },
