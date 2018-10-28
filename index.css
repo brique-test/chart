@@ -1,0 +1,15 @@
+#chart {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title {
+  text-align: center;
+}
+
+.line {
+  fill: none;
+  stroke: #ffab00;
+  stroke-width: 3;
+}
