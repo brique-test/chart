@@ -8,8 +8,24 @@
   text-align: center;
 }
 
+#button-box {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
 .line {
   fill: none;
-  stroke: #ffab00;
-  stroke-width: 3;
+  stroke: darkorange;
+  stroke-width: 1;
+}
+
+.btn {
+  border: 1px solid deepskyblue;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  margin: 0 1rem;
 }

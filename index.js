@@ -73,3 +73,24 @@ readCSV.then(() => {
     .attr('transform', `translate(${size.margin}, 0)`)
     .attr('d', line);
 });
+
+let thicknessValue = 1;
+const increaseBtn = document.getElementById('increase');
+const decreaseBtn = document.getElementById('decrease');
+
+increaseBtn.addEventListener('click', () => {
+  const line = document.getElementsByClassName('line')[0];
+  thicknessValue += 1;
+  line.style.strokeWidth = thicknessValue;
+});
+
+decreaseBtn.addEventListener('click', () => {
+  const line = document.getElementsByClassName('line')[0];
+  if (thicknessValue === 1) {
+    thicknessValue = 1;
+    alert('최소 굵기입니다.');
+  } else {
+    thicknessValue -= 1;
+  }
+  line.style.strokeWidth = thicknessValue;
+});
