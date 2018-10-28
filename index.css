@@ -19,7 +19,7 @@
 .line {
   fill: none;
   stroke: darkorange;
-  stroke-width: 1;
+  stroke-width: 1; /* 차트의 굵기 옵션 */
 }
 
 .btn {
