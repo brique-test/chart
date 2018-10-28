@@ -47,6 +47,8 @@ $ npm run start
 $ yarn start
 ```
 
+서버가 작동하기 시작하면 `localhost:1234`로 접속하면 됩니다.
+
 ## 사용법
 
 ![screenshot](./screenshot/main.png)
