@@ -6,9 +6,29 @@
   "author": "huskyhoochu",
   "license": "MIT",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "prettier": "prettier --single-quote --arrow-parens always --write",
+    "lint": "eslint --fix"
+  },
+  "lint-staged": {
+    "index.js": [
+      "yarn prettier",
+      "yarn lint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "devDependencies": {
-    "parcel-bundler": "^1.10.3"
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "husky": "^1.1.2",
+    "lint-staged": "^7.3.0",
+    "parcel-bundler": "^1.10.3",
+    "prettier": "1.14.3"
   }
 }
